@@ -19,13 +19,13 @@ Follow these steps to get the PDF RAG Agent up and running:
 
 2. Create a virtual environment
    ```bash
-   python -m venv venv
+   python -m venv .venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
 3. Install required packages
    ```bash
-   pip install agno qdrant-client python-dotenv
+   pip install -r requirements.txt
    ```
 
 4. Create a `.env` file with:
@@ -46,7 +46,7 @@ Follow these steps to get the PDF RAG Agent up and running:
 
 2. Pull the required Ollama models
    ```bash
-   ollama pull llama3.1
+   ollama pull llama3.2
    ollama pull nomic-embed-text
    ```
 
@@ -57,7 +57,7 @@ Follow these steps to get the PDF RAG Agent up and running:
 
 ## Step 4: Run the Agent
 
-1. Start Qdrant if not already running
+1. Start Qdrant if not already running (in docker it will run)
 
 2. Make sure Ollama is running
 
