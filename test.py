@@ -35,7 +35,7 @@ knowledge_base = PDFKnowledgeBase(
 # Create a PDF RAG agent using Ollama's Llama 3.1 model
 pdf_rag_agent = Agent(
     name="PDF Document Assistant",
-    model=Ollama(model="llama3.1"),  # Using the proper parameter 'model' instead of 'id'
+    model=Ollama(model="llama3.2"),  # Using the proper parameter 'model' instead of 'id'
     knowledge=knowledge_base,
     description="You are a helpful PDF Document Assistant. Your goal is to extract and provide information from the PDF documents in your knowledge base. Always cite your sources and provide direct references to the documents you're pulling information from.",
     instructions=[
