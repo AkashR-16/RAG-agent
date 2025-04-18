@@ -32,7 +32,7 @@ knowledge_base = PDFKnowledgeBase(
 # Load the knowledge base: Uncomment for first run to load the knowledge base
 # knowledge_base.load(upsert=True)
 
-# Create a PDF RAG agent using Ollama's Llama 3.1 model
+# Create a PDF RAG agent using Ollama's Llama 3.2 model
 pdf_rag_agent = Agent(
     name="PDF Document Assistant",
     model=Ollama(model="llama3.2"),  # Using the proper parameter 'model' instead of 'id'
